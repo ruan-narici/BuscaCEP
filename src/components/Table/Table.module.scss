@@ -1,0 +1,24 @@
+@import 'styles/variables.scss';
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    &__header {
+        background-color: $black;
+        color: $blue-50;
+
+        th {
+            padding: 1rem 2rem;
+            text-align: start;
+
+            &:nth-last-child(1) {
+                border-radius: 0 10px 10px 0;
+            }
+
+            &:nth-child(1) {
+                border-radius: 10px 0 0 10px;
+            }
+        }
+    }
+}

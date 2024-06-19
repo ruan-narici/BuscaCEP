@@ -1,0 +1,17 @@
+@import 'styles/variables.scss';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+    padding: 1.5rem 3.5rem;
+    border-bottom: 1px solid $blue-100;
+    background-color: $blue-50;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+
+    &__title {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+    }
+}

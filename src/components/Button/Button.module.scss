@@ -1,0 +1,17 @@
+@import 'styles/variables.scss';
+
+.button {
+    padding: 1rem 3rem;
+    background-color: $black;
+    color: $blue-50;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s all;
+
+    &:active {
+        scale: .95;
+    }
+}
