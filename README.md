@@ -1,6 +1,7 @@
 # Busca CEP
 ``` 
-✨ Este projeto foi desenvolvido com o objetivo de aplicar meus conhecimentos em React, TypeScript e SCSS.
+✨ Este projeto foi desenvolvido com o objetivo de aplicar meus conhecimentos 
+em React, TypeScript e SCSS.
 ``` 
 
 ![Ruan Narici](./src/assets/preview.png)
