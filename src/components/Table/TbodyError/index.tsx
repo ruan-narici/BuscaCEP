@@ -7,14 +7,14 @@ interface Props {
 }
 
 export default function TbodyError({ data }: Props) {
-    return (
-        <tbody className={ styles.tbody }>
-            <tr>
-                <td>{ data === undefined ? 'CEP inválido' : data.erro ? 'Nenhum endereço foi encontrado' : '' }</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    );
+  return (
+    <tbody className={ styles.tbody }>
+      <tr>
+        <td>{ data === undefined ? 'CEP inválido' : data.erro ? 'Nenhum endereço foi encontrado' : '' }</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  );
 }

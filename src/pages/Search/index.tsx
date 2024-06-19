@@ -6,33 +6,33 @@ import Button from 'components/Button';
 
 
 export default function Search() {
-    const [address, setAddress] = useState();
-    const navigate = useNavigate();
-    const params = useParams();
+  const [address, setAddress] = useState();
+  const navigate = useNavigate();
+  const params = useParams();
 
-    useEffect(() => {
-        async function getAddress() {
-            const url = `https://viacep.com.br/ws/${ params.cep }/json/`;
-            try {
-                const request = await fetch(url);
-                const response = await request.json();
-                setAddress(response);
-            } catch {
-                setAddress(undefined);
-            }
-        }
+  useEffect(() => {
+    async function getAddress() {
+      const url = `https://viacep.com.br/ws/${ params.cep }/json/`;
+      try {
+        const request = await fetch(url);
+        const response = await request.json();
+        setAddress(response);
+      } catch {
+        setAddress(undefined);
+      }
+    }
         
-        getAddress();
-    }, []);
+    getAddress();
+  }, []);
 
-    return (
-        <section className={ styles.section }>
-            <h1 className={ styles.section__title }>Resultado da busca por CEP</h1>
-            <Table data={ address } />
-            <Button 
-                description='Nova Busca'
-                callback={ () => { navigate('/'); } }
-            />
-        </section>
-    );
+  return (
+    <section className={ styles.section }>
+      <h1 className={ styles.section__title }>Resultado da busca por CEP</h1>
+      <Table data={ address } />
+      <Button 
+        description='Nova Busca'
+        callback={ () => { navigate('/'); } }
+      />
+    </section>
+  );
 }

@@ -6,12 +6,12 @@ interface Props {
 }
 
 export default function Button({ description, callback = undefined }: Props) {
-    return (
-        <button 
-            className={ styles.button }
-            onClick={ callback }
-        >
-            { description }
-        </button>
-    );
+  return (
+    <button 
+      className={ styles.button }
+      onClick={ callback }
+    >
+      { description }
+    </button>
+  );
 }
